@@ -522,7 +522,7 @@ void CAddrMan::Connected_(const CService &addr, int64 nTime)
     if (info != addr)
         return;
 
-    // update info
+    // update the information
     int64 nUpdateInterval = 20 * 60;
     if (nTime - info.nTime > nUpdateInterval)
         info.nTime = nTime;
